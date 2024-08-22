@@ -1,0 +1,38 @@
+.Result {
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.Result .btnBox {
+    display: flex;
+    justify-content: center;
+    width: 700px;
+}
+
+.Result .btnBox button {
+    color: #fff;
+    background-color: #393093;
+    border: none;
+    border-radius: 32px;
+    padding: 18px;
+    margin: 8px;
+    width: 180px;
+    font-size: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.Result .btnBox button:hover {
+    cursor: pointer;
+    background-color: #6964a7
+}
+
+.Result .btnBox button div{
+    color: #fff;
+    font-size: 14px;
+}

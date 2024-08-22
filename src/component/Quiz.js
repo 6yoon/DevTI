@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./Quiz.css";
 
-function Quiz({type, setType}) {
+function Quiz({setType}) {
     const [order, setOrder] = useState(0);
     const [result, setResult] = useState([0, 0, 0, 0]);
     const quiz = [
@@ -15,7 +15,7 @@ function Quiz({type, setType}) {
         id: 1,
         content: "프로젝트 개발 속도가 더뎌지고 있다... 내가 제시한 해결책은?",
         type1: ["규칙적으로 모여서 함께 개발하는 시간을 가져볼까요?", "E"],
-        type2: ["각자 서로의 작업량을 매일 온라인으로 공유해볼까요?", "I"],
+        type2: ["각자 서로의 작업량을 매일 온라인으로 공유해 볼까요?", "I"],
       },
       {
         id: 2,
@@ -25,7 +25,7 @@ function Quiz({type, setType}) {
       },
       {
         id: 3,
-        content: "후임에게 쓴 소리를 해야 할 때, 어떤 식으로?",
+        content: "후임에게 쓴소리를 해야 할 때, 어떤 식으로?",
         type1: ["그래도 상처받지 않도록, 부드럽게 말하자", "F"],
         type2: [
           "말을 조금 강하게 하더라도, 고쳐야 할 사항을 명확하게 알려주자",
@@ -35,12 +35,12 @@ function Quiz({type, setType}) {
       {
         id: 4,
         content: "드디어 회의 끝! 다음 회의 일정이 언제였더라?",
-        type1: ["까먹지 않게 일정 추가 해놔야 겠다", "J"],
-        type2: ["그때 쯤 되면 알아서 누가 알려주겠지~", "P"],
+        type1: ["까먹지 않게 일정 추가 해 놔야겠다", "J"],
+        type2: ["그때쯤 되면 알아서 누가 알려주겠지~", "P"],
       },
       {
         id: 5,
-        content: "중간 보고! 우리 팀 프로젝트는 아직 덜 완성되었는데…",
+        content: "중간보고! 우리 팀 프로젝트는 아직 덜 완성되었는데…",
         type1: [
           "사례를 통해 앞으로의 가능성을 어필하여 부족한 부분을 채우자",
           "N",
@@ -88,7 +88,7 @@ function Quiz({type, setType}) {
         id: 11,
         content: "드디어 프로젝트 마무리 단계! 팀원들에게 한마디 해주세요!",
         type1: ["최대한 역량을 발휘해 최고의 결과를 만들자!", "P"],
-        type2: ["마지막까지 실수없이 체계적으로 마무리하자!", "J"],
+        type2: ["마지막까지 실수 없이 체계적으로 마무리하자!", "J"],
       },
     ];
 
@@ -154,7 +154,6 @@ function Quiz({type, setType}) {
           <button onClick={() => clickBtn(quiz[order].type2[1])}>
             <div>{quiz[order].type2[0]}</div>
           </button>
-          <div>{type}</div>
         </div>
       </div>
     </div>
