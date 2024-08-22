@@ -1,0 +1,48 @@
+.container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .title {
+    font-size: 48px;
+    margin-bottom: 10px;
+  }
+  
+  .divider {
+    width: 80%;
+    margin: 0 auto;
+    border: none;
+    border-top: 1px solid #666;
+  }
+  
+  .subtitle {
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 20px;
+    color: #6B6972;
+  }
+  
+  .story {
+    text-align: center;
+    font-size: 15px;
+    line-height: 1.2;
+    white-space: pre;
+    margin-bottom: 20px;
+    color: #3A3636;
+  }
+  
+  .text {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .button {
+    background-color: #393093;
+    color: white;
+    padding: 20px 40px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+  }
+  

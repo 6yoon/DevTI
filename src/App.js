@@ -1,8 +1,9 @@
+import React, { useState } from 'react';
+import Story from './component/Story';
+import Header from './component/Header';
+import Quiz from './component/Quiz';
+import Result from './component/Result';
 import './App.css';
-import Quiz from "./component/Quiz";
-import Result from "./component/Result";
-import Header from "./component/Header";
-import { useState } from 'react';
 
 function App() {
   let [type, setType] = useState("");
@@ -11,8 +12,10 @@ function App() {
       <Header></Header>
       {/* <Quiz setType={setType}></Quiz> */}
       <Result type={type}></Result>
+      <Story />
     </div>
   );
 }
 
 export default App;
+
