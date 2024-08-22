@@ -1,4 +1,3 @@
-import { useState } from "react";
 import "./Quiz.css";
 
 function Quiz({setType, display, setDisplay, order, setOrder, result, setResult}) {

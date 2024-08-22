@@ -12,7 +12,7 @@ const Story = ({display, setDisplay}) => {
   }
   return (
     <div className="Story" style={{display: display.Story}}>
-      <h1 className="title">이야기</h1>
+      <h1 className="title">{"<story>"}</h1>
       <h2 className="subtitle">어젯밤 꿈 속에서...</h2>
       <div className="story">
         {` 
