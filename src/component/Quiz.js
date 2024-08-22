@@ -1,9 +1,7 @@
 import { useState } from "react";
 import "./Quiz.css";
 
-function Quiz({setType}) {
-    const [order, setOrder] = useState(0);
-    const [result, setResult] = useState([0, 0, 0, 0]);
+function Quiz({setType, display, setDisplay, order, setOrder, result, setResult}) {
     const quiz = [
       {
         id: 0,
@@ -133,10 +131,21 @@ function Quiz({setType}) {
         result[2] >= 1 ? decision = "t" : decision = "f";
         result[3] >= 1 ? life = "j" : life = "p";
         setType(`${energy + recognize + decision + life}`)
+        showResult()
     }
   }
+
+  function showResult(){
+    setDisplay({
+      Main: "none",
+      Story: "none",
+      Quiz: "none",
+      Result: "",
+    })
+  }
+
   return (
-    <div className="Quiz">
+    <div className="Quiz" style={{display: display.Quiz}}>
       <div className="quizBox">
         <div className="bar">
           <div
@@ -148,7 +157,7 @@ function Quiz({setType}) {
           <span>{quiz[order].content}</span>
         </div>
         <div className="btnBox">
-          <button onClick={() => clickBtn(quiz[order].type1[1])}>
+          <button onClick={() => {clickBtn(quiz[order].type1[1])}}>
             <div>{quiz[order].type1[0]}</div>
           </button>
           <button onClick={() => clickBtn(quiz[order].type2[1])}>

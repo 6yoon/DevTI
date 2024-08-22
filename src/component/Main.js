@@ -1,15 +1,23 @@
 import React from 'react';
+import start from './../src-assets/start.png'
 import './Main.css';
 
-const Main = () => {
+const Main = ({display, setDisplay}) => {
+  function showStory(){
+    setDisplay({
+      Main: "none",
+      Story: "",
+      Quiz: "none",
+      Result: "none"
+    })
+  }
   return (
-    <div className="container">
-      <h1 className="title">DevTI</h1>
-      <hr className="divider" />
-      <h2 className="subtitle">개발자 유형 테스트</h2>
-      <div className="text">개발자들과 함께 나의 성격 유형을 알아가보자</div>
-      <button className="button">테스트 시작하기!</button>
-      <div className="EL">컴퓨터소프트웨어공학과 전공동아리 EL</div>
+    <div className="Main" style={{display: display.Main}}>
+      <div className="subtitle">개발자 유형 테스트</div>
+      <div className="text">내 성격은 어떤 개발자와 맞을까?
+      지금 바로 테스트해보세요!</div>
+      <img className='startImg' src={start} alt="start"></img>
+      <button className="button" onClick={showStory}>테스트 시작하기!</button>
     </div>
   );
 };

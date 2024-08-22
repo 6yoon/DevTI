@@ -1,50 +1,43 @@
-.container {
+.Main {
     text-align: center;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 800px;
   }
   
-  .title {
-    font-size: 48px;
-    margin-bottom: 10px;
-  }
-  
-  .divider {
-    width: 80%;
-    margin: 0 auto;
-    border: none;
-    border-top: 1px solid #666;
-  }
-  
-  .subtitle {
+  .Main .subtitle {
     text-align: center;
     font-size: 25px;
     margin-top: 60px;
     margin-bottom: 20px;
+    font-weight: bold;
   }
   
-  .text {
+  .Main .text {
     color: #293261;
-    font-size: 20px;
+    font-size: 18px;
     margin-bottom: 30px;
   }
+
+  .Main .startImg {
+    width: 300px;
+  }
   
-  .button {
+  .Main .button {
     background-color: #393093;
     color: white;
-    margin-top: 100px;
+    margin-top: 40px;
     margin-bottom: 20px;
     padding: 20px 40px;
     border: none;
     border-radius: 50px;
-    cursor: pointer;
   }
-  
-  .EL {
-    text-align: center;
+
+  .Main .button:hover {
+    background-color: #6964a7;
+    cursor: pointer;
     font-weight: bold;
-    font-size: 10px;
-    line-height: 1.2;
-    white-space: pre;
-    margin-bottom: 20px;
-    color: gray;
   }

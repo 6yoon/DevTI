@@ -1,17 +1,69 @@
 .Result {
-    height: 600px;
+    height: 1100px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
+}
 
+.Result .imgBox {
+    width: 600px;
+    height: 750px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.Result .imgBox .typeImg{
+    position: absolute;
+    width: 670px;
+    z-index: 6;
+}
+
+.Result .imgBox .resultText {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 5;
+    width: 315px;
+    height: 700px;
+    padding: 40px;
+    /* background-color: antiquewhite; */
+}
+
+.Result .imgBox .resultText span:nth-of-type(1){
+    font-size: 30px;
+    font-weight: bold;
+}
+.Result .imgBox .resultText span:nth-of-type(2){
+    font-size: 19px;
+    margin-top: 420px;
+}
+
+.Result .imgBox .resultText span:nth-of-type(3){
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.Result .imgBox .cardBox {
+    display: flex;
+    justify-content: center;
+}
+
+.Result .imgBox .card_f {
+    width: 700px;
+    position: absolute;
+    z-index: 4;
 }
 
 .Result .btnBox {
     display: flex;
     justify-content: center;
     width: 700px;
+    position: relative;
 }
 
 .Result .btnBox button {
@@ -27,9 +79,14 @@
     justify-content: center;
 }
 
+.Result .btnBox a {
+    text-decoration: none;
+}
+
 .Result .btnBox button:hover {
     cursor: pointer;
-    background-color: #6964a7
+    background-color: #6964a7;
+    font-weight: bold;
 }
 
 .Result .btnBox button div{
