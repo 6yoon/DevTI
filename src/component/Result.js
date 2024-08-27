@@ -282,7 +282,7 @@ function Result({ type, display, setDisplay, setOrder, setResult }) {
           <div>테스트 다시 하기</div>
         </button>
         <button>
-          <a href="#">
+          <a href="https://forms.gle/V4Lj6G5xKGgUpfkT7">
             <div>EL 지원하러 가기</div>
           </a>
         </button>
