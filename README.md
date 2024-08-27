@@ -12,11 +12,11 @@
 - **피드백 후 UI 및 내용 수정**: 여러 번의 페이지 테스트 결과를 토대로 질문 내용을 수정하고, 디자인 요소도 피드백을 받아 크게 수정했으며, 웹과 모바일 모두 이용할 수 있도록 전체적인 레이아웃을 수정했습니다.
 
 ## 페이지 소개
-<kbd> <img src="https://github.com/user-attachments/assets/fc575e78-b043-4547-9c7a-a88082bb40fe" width="300" style="border: 1px solid black"/> </kbd>
-<kbd> <img src="https://github.com/user-attachments/assets/b4f78d0e-cf1e-42bf-a9c0-d16bafc17d85" height="510" style="border: 1px solid black"/> </kbd>
-<kbd> <img src="https://github.com/user-attachments/assets/5d16f603-6d5d-47cc-833f-aca31e4e2da8" height="510" style="border: 1px solid black"/> </kbd>
-<kbd> <img src="https://github.com/user-attachments/assets/4580bcf2-0491-42c7-89b3-2f0785245ee0" height="510" style="border: 1px solid black"/> </kbd>
-<kbd> <img src="https://github.com/user-attachments/assets/f9a963e2-06f9-4048-b7d3-5e6f2b6adaa9" height="510" style="border: 1px solid black"/> </kbd>
+<kbd> <img src="https://github.com/user-attachments/assets/fc575e78-b043-4547-9c7a-a88082bb40fe" width="280" style="border: 1px solid black"/> </kbd>
+<kbd> <img src="https://github.com/user-attachments/assets/b4f78d0e-cf1e-42bf-a9c0-d16bafc17d85" height="478" style="border: 1px solid black"/> </kbd>
+<kbd> <img src="https://github.com/user-attachments/assets/5d16f603-6d5d-47cc-833f-aca31e4e2da8" height="478" style="border: 1px solid black"/> </kbd>
+<kbd> <img src="https://github.com/user-attachments/assets/4580bcf2-0491-42c7-89b3-2f0785245ee0" height="478" style="border: 1px solid black"/> </kbd>
+<kbd> <img src="https://github.com/user-attachments/assets/f9a963e2-06f9-4048-b7d3-5e6f2b6adaa9" height="478" style="border: 1px solid black"/> </kbd>   
 **Main Story Quiz Result**
 
 ## 개발 환경
