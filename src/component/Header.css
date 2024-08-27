@@ -1,7 +1,13 @@
+@font-face{
+    font-family:'bitbit';
+    src:url('//cdn.df.nexon.com/img/common/font/DNFBitBit-Regular.woff'),url('//cdn.df.nexon.com/img/common/font/DNFBitBit-Regular.woff2') ;
+  }
+
 .Header {
     display: flex;
     align-items: center;
     text-align: center;
+    position: relative;
 }
 
 .Header .titleBox {
@@ -14,15 +20,16 @@
     background-color: #fff;
     position: fixed;
     z-index: 10;
-    height: 190px;
+    height: 160px;
 }
 
 .Header .titleBox .title{
     display: flex;
     flex-direction: column;
     position: relative;
-    top: 50px;
+    top: 40px;
     align-items: center;
+    text-shadow: -1px 0px #fff, 0px 1px #fff, 1px 0px #fff, 0px -1px #fff;
 
 }
 
@@ -31,9 +38,21 @@
     height: 33px;
     position: relative;
     top: 10px;
+    -webkit-touch-callout: "none";
+    user-select: none;
 }
 
 .Header .titleText {
     font-size: 40px;
     font-weight: bold;
+    font-family:'bitbit';
+}
+
+.Header .colorBox {
+    width: 144px;
+    height: 20px;
+    background-color: #73C7EF;
+    position: absolute;
+    z-index: -1;
+    top: 62px;
 }

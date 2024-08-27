@@ -12,24 +12,25 @@ const Story = ({display, setDisplay}) => {
   }
   return (
     <div className="Story" style={{display: display.Story}}>
-      <h1 className="title">{"<story>"}</h1>
-      <h2 className="subtitle">어젯밤 꿈 속에서...</h2>
+      <h2 className="subtitle">컴퓨터공학부에 입학하게 된 나!</h2>
       <div className="story">
-        {` 
-나는 대기업에서 일하는 신입 개발자가 되었다...
+        {`
+아직 부족한 개발 실력이지만
 
-그리고 드디어 내가 참여하는 첫 프로젝트가 시작되었다!
+컴공과 친구들과 조별 과제를 하게 되었다
 
-프로젝트를 진행해가며 다양한 상황을 마주하게 되는데...
+분명 좋은 기회가 될 거야!
+
 .
 .
 .
 
-갑자기 궁금해지는걸?
+하지만 쉽지만은 않을지도...
         `}
       </div>
-      <div className="text">나는 어떤 개발자였을까?</div>
-      <button className="button" onClick={showQuiz}>기억을 되짚어보자!</button>
+      <div className="text">{`조별 과제의 시행착오 속에서 드러난 나의 성격!
+내 성격은 어떤 개발자와 맞을까?`}</div>
+      <button className="button" onClick={showQuiz}>시작</button>
     </div>
   );
 };

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Header from "./component/Header";
 import Main from "./component/Main";
 import Story from "./component/Story";
@@ -17,6 +17,22 @@ function App() {
   });
   const [order, setOrder] = useState(0);
   const [result, setResult] = useState([0, 0, 0, 0]);
+
+  useEffect(() => {
+    const handleTouchMove = (event) => {
+      const touch = event.touches[0];
+      if (touch.clientX > window.innerWidth) {
+        event.preventDefault();
+      }
+    };
+
+    window.addEventListener("touchmove", handleTouchMove, { passive: false });
+
+    return () => {
+      window.removeEventListener("touchmove", handleTouchMove);
+    };
+  }, []);
+
   return (
     <div className="App">
       <Header></Header>

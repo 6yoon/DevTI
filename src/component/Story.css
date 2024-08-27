@@ -2,21 +2,16 @@
     text-align: center;
     padding: 20px;
     position: relative;
-    height: 700px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
   
-  .Story .title {
-    font-size: 30px;
-    margin-bottom: 10px;
-  }
-  
   .Story .subtitle {
     text-align: center;
-    font-size: 25px;
+    font-size: 22px;
+    margin-top: 140px;
     margin-bottom: 20px;
     color: #6B6972;
   }
@@ -32,23 +27,39 @@
   
   .Story .text {
     font-weight: bold;
-    font-size: 20px;
+    font-size: 16px;
+    margin-top: 16px;
     margin-bottom: 30px;
+    white-space: pre;
+    line-height: 1.5;
   }
   
   .Story .button {
-    background-color: #393093;
+    background-image: url(./../src-assets/button.png);
+    background-size: cover;
+    background-position: center;
+    background-color: transparent;
     color: white;
-    padding: 20px 40px;
-    border: none;
-    border-radius: 50px;
     margin-top: 40px;
+    margin-bottom: 20px;
+    padding: 30px 65px;
+    border-radius: 50px;
+    border: none;
+    font-size: 16px
+  }
+  
+  @media (hover: hover) and (pointer: fine) {
+    .Story .button:hover {
+      background-image: url(./../src-assets/pushedButton.png);
+      cursor: pointer;
+      font-weight: bold;
+    }
   }
 
-  
-  .Story .button:hover {
-    background-color: #6964a7;
+  .Story .button:active {
+    background-image: url(./../src-assets/pushedButton.png);
     cursor: pointer;
     font-weight: bold;
   }
+  
   

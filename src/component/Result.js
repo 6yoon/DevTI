@@ -1,13 +1,13 @@
 import { useEffect, useState } from "react";
 import "./Result.css";
+import loading from './../src-assets/loading.gif';
 
 function Result({ type, display, setDisplay, setOrder, setResult }) {
   const typeResult = [
     {
       type: "esfp",
       dev: "프론트엔드 개발자",
-      char: 
-      `누구보다 활발하고
+      char: `누구보다 활발하고
 에너지있는 당신은...`,
       content:
         "웹사이트 또는 앱에서 사용자가 실제로 보고 상호작용하는 인터페이스의 디자인과 기능을 구현하는",
@@ -174,23 +174,19 @@ function Result({ type, display, setDisplay, setOrder, setResult }) {
   const cardImg = [
     {
       color: "pink",
-      front: require("./../src-assets/card/pink_f.png"),
-      back: require("./../src-assets/card/pink_b.png"),
+      card: require("./../src-assets/card/pink_b.png"),
     },
     {
       color: "green",
-      front: require("./../src-assets/card/green_f.png"),
-      back: require("./../src-assets/card/green_b.png"),
+      card: require("./../src-assets/card/green_b.png"),
     },
     {
       color: "blue",
-      front: require("./../src-assets/card/blue_f.png"),
-      back: require("./../src-assets/card/blue_b.png"),
+      card: require("./../src-assets/card/blue_b.png"),
     },
     {
       color: "yellow",
-      front: require("./../src-assets/card/yellow_f.png"),
-      back: require("./../src-assets/card/yellow_b.png"),
+      card: require("./../src-assets/card/yellow_b.png"),
     },
   ];
 
@@ -212,7 +208,7 @@ function Result({ type, display, setDisplay, setOrder, setResult }) {
       ]);
 
       if (foundCard) {
-        setCard([foundCard.front, foundCard.back]);
+        setCard(foundCard.card);
       } else {
         setCard([null, null]);
         console.warn("해당 색상의 카드가 없습니다.");
@@ -225,6 +221,7 @@ function Result({ type, display, setDisplay, setOrder, setResult }) {
 
   useEffect(() => {
     makeType(type);
+    window.scrollTo(0, 0);
   }, [type]);
 
   function showMain() {
@@ -236,8 +233,8 @@ function Result({ type, display, setDisplay, setOrder, setResult }) {
     });
     setOrder(0);
     setResult([0, 0, 0, 0]);
-    setFlipped(false)
-    setCard([])
+    setFlipped(false);
+    setCard([]);
   }
 
   const [flipped, setFlipped] = useState(false);
@@ -246,22 +243,37 @@ function Result({ type, display, setDisplay, setOrder, setResult }) {
     setFlipped(!flipped);
   }
 
+  const [isLoaded, setIsLoaded] = useState(false);
+
   return (
     <div className="Result" style={{ display: display.Result }}>
-      <div className="imgBox">
-        <div className={`cardBox ${flipped ? 'flipped' : ''}`} onClick={toggleFlip}>
-          <div className="backBox">
-            <div>{resultText[1]}</div>
-            <img className="card_b" alt="card_b" src={card[1]}></img>
-          </div>
-          <div className="frontBox">
-            <img className="card_f" alt="card_f" src={card[0]}></img>
-            <img className="typeImg" src={resultText[3]} alt="type"></img>
-            <div className="resultText">
-              <span>{resultText[0]}</span>
-              <span>{resultText[2]}</span>
-              <span>{resultText[0]}</span>
-            </div>
+      <div
+        className={`cardBox ${flipped ? "flipped" : ""}`}
+        onClick={toggleFlip}
+      >
+        <div className="backBox">
+          <div><span>{resultText[1]}</span></div>
+          {!isLoaded && <img src={loading} alt="loading..." style={{display: isLoaded && "none", zIndex: 6, width: 40}}/>}
+          <img
+            className="card_b"
+            alt="card_b"
+            src={card}
+            onLoad={()=>setIsLoaded(true)}
+            oncontextmenu="return false"
+            style={{display: isLoaded ? "flex" : "none"}}
+          ></img>
+        </div>
+        <div className="frontBox">
+          <img
+            className="card_f"
+            alt="card_f"
+            src={resultText[3]}
+            oncontextmenu="return false"
+          ></img>
+          <div className="resultText">
+            <span>{resultText[0]}</span>
+            <span>{resultText[2]}</span>
+            <span>{resultText[0]}</span>
           </div>
         </div>
       </div>
@@ -275,6 +287,7 @@ function Result({ type, display, setDisplay, setOrder, setResult }) {
           </a>
         </button>
       </div>
+      <div className="share">결과를 캡쳐하여 친구에게 자랑해보세요!</div>
     </div>
   );
 }

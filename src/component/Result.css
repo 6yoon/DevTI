@@ -1,55 +1,46 @@
+@font-face {
+    font-family: 'Ownglyph_UNZ-Rg';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2406-1@1.0/Ownglyph_UNZ-Rg.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .Result {
-    height: 1165px;
+    height: 850px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-}
+} 
 
-.Result .imgBox {
-    width: 600px;
-    height: 750px;
+.Result .cardBox {
+    margin-top: 10px;
+    height: 560px;
     display: flex;
     justify-content: center;
     text-align: center;
-    padding: 20px;
-}
-
-.Result .cardBox {
-    display: flex;
-    justify-content: center;
+    position: relative;
     perspective: 1000px;
 }
 
 .Result .backBox {
     display: flex;
     justify-content: center;
+    align-items: center;
     backface-visibility: hidden;
     transition: transform 0.6s;
     transform: rotateY(0deg);
     z-index: 4;
-
 }
 
 .Result .frontBox {
     display: flex;
     justify-content: center;
+    align-items: center;
     backface-visibility: hidden;
     transition: transform 0.6s;
     transform: rotateY(180deg);
-}
-
-.Result .backBox div {
-    position: absolute;
-    z-index: 5;
-    color: #fff;
-    font-size: 30px;
-    font-weight: bold;
-    top: 280px;
-    width: 400px;
-    white-space: pre;
-    text-align: center;
 }
 
 .cardBox.flipped .frontBox {
@@ -60,27 +51,37 @@
     transform: rotateY(-180deg);
 }
 
-.backBox div:hover + .card_b, .backBox div:active + .card_b, .card_b:hover, .card_b:active{
-    cursor: pointer;
-    filter: drop-shadow(0px 0px 20px #ffe7b0);
-}
-
 .Result .card_b {
-    width: 700px;
+    width: 300px;
     position: absolute;
     z-index: 4;
+    -webkit-touch-callout: "none";
+}
+
+.Result .backBox div {
+    position: absolute;
+    z-index: 5;
+    width: 300px;
+    text-align: center;
+    user-select: none;
+    height: 500px;
+}
+
+.Result .backBox div span {
+    color: #fff;
+    font-weight: bold;
+    white-space: pre;
+    font-size: 34px;
+    font-family: 'Ownglyph_UNZ-Rg';
+    position: relative;
+    top: 180px;
+
 }
 
 .Result .card_f {
-    width: 700px;
+    width: 300px;
     position: absolute;
     z-index: 1;
-}
-
-.Result .typeImg{
-    position: absolute;
-    width: 670px;
-    z-index: 3;
 }
 
 .Result .resultText {
@@ -88,53 +89,71 @@
     flex-direction: column;
     position: absolute;
     z-index: 2;
-    width: 315px;
-    height: 700px;
-    padding: 40px;
+    width: 215px;
+    height: 440px;
 }
 
 .Result .resultText span:nth-of-type(1){
     font-size: 30px;
     font-weight: bold;
+    color: #fff;
+    font-family: 'Ownglyph_UNZ-Rg';
+
 }
 .Result .resultText span:nth-of-type(2){
-    font-size: 19px;
-    margin-top: 420px;
+    font-size: 18px;
+    margin-top: 290px;
+    font-family: 'Ownglyph_UNZ-Rg';
 }
 
 .Result .resultText span:nth-of-type(3){
     font-size: 24px;
-    font-weight: bold;
+    font-weight: 700;
     margin-top: 5px;
+    font-family: 'Ownglyph_UNZ-Rg';
+}
+
+.backBox div:hover + .card_b, .backBox div:active + .card_b, .card_b:hover, .card_b:active{
+    cursor: pointer;
+    filter: drop-shadow(0px 0px 24px #ffd573);
 }
 
 .Result .btnBox {
     display: flex;
     justify-content: center;
-    width: 700px;
     position: relative;
-}
-
-.Result .btnBox button {
-    color: #fff;
-    background-color: #393093;
-    border: none;
-    border-radius: 32px;
-    padding: 18px;
-    margin: 8px;
-    width: 180px;
-    font-size: 100%;
-    display: flex;
-    justify-content: center;
 }
 
 .Result .btnBox a {
     text-decoration: none;
 }
 
-.Result .btnBox button:hover {
+.Result .btnBox button {
+    background-image: url(./../src-assets/button.png);
+    background-size: cover;
+    background-position: center;
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    border-radius: 32px;
+    padding: 24px;
+    margin: 8px 4px 8px 4px;
+    width: 180px;
+    display: flex;
+    justify-content: center;
+}
+
+@media (pointer: fine) {
+    .Result .btnBox button:hover {
+        background-image: url(./../src-assets/pushedButton.png);
+        cursor: pointer;
+        font-weight: bold;
+    }
+  }
+
+  .Result .btnBox button:active {
+    background-image: url(./../src-assets/pushedButton.png);
     cursor: pointer;
-    background-color: #6964a7;
     font-weight: bold;
 }
 
@@ -142,3 +161,21 @@
     color: #fff;
     font-size: 14px;
 }
+
+.Result .share {
+    font-size: 15px;
+    animation: colorChange 1s infinite;
+    margin-top: 12px;
+  }
+  
+  @keyframes colorChange {
+    0% {
+      color: #ffd573;
+    }
+    50% {
+      color: #000;
+    }
+    100% {
+        color: #ffd573;
+    }
+  }
