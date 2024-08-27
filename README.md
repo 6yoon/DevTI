@@ -22,3 +22,6 @@
 ## 개발 환경
 - `javascript`
 - **FrameWork**: `React`
+
+## QR
+<kbd> <img src="https://github.com/user-attachments/assets/f5b0237e-375b-4813-afc1-884eedbddfe1" height="300" style="border: 1px solid black"/> </kbd>   
