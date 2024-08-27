@@ -1,4 +1,4 @@
-# $\huge{\text{\color{#73C7EF}DevTI}}$ 개발자 성격 유형 테스트
+# $\huge{\text{\color{#73C7EF}DevTI}}$  개발자 성격 유형 테스트
 
 [<img src="https://github.com/user-attachments/assets/d5563ad6-8190-40bf-be81-e548a4f5258f" width="300"/>](https://6yoon.github.io)   
  $\color{#73C7EF}\ 이미지를\ 클릭하여\ 테스트에\ 참여하세요!$  
@@ -10,3 +10,13 @@
 - **UI 및 일러스트 디자인**: 화면 UI를 디자인하고 결과별 일러스트를 그렸습니다.
 - **개발**: 정해진 디자인과 기획을 토대로 페이지를 개발하였습니다.
 - **피드백 후 UI 및 내용 수정**: 여러 번의 페이지 테스트 결과를 토대로 질문 내용을 수정하고, 디자인 요소도 피드백을 받아 크게 수정했으며, 웹과 모바일 모두 이용할 수 있도록 전체적인 레이아웃을 수정했습니다.
+
+## 페이지 소개
+<kbd> <img src="https://github.com/user-attachments/assets/fc575e78-b043-4547-9c7a-a88082bb40fe" width="300" style="border: 1px solid black"/> </kbd>
+<kbd> <img src="https://github.com/user-attachments/assets/b4f78d0e-cf1e-42bf-a9c0-d16bafc17d85" height="510" style="border: 1px solid black"/> </kbd>
+<kbd> <img src="https://github.com/user-attachments/assets/5d16f603-6d5d-47cc-833f-aca31e4e2da8" height="510" style="border: 1px solid black"/> </kbd>
+**Main Story Quiz**
+   
+<kbd> <img src="https://github.com/user-attachments/assets/4580bcf2-0491-42c7-89b3-2f0785245ee0" height="510" style="border: 1px solid black"/> </kbd>
+<kbd> <img src="https://github.com/user-attachments/assets/f9a963e2-06f9-4048-b7d3-5e6f2b6adaa9" height="510" style="border: 1px solid black"/> </kbd>
+**Result**
