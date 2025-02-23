@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/DevTI/static/css/main.99cc5c7e.css",
+    "main.js": "/DevTI/static/js/main.e0a7cd11.js",
+    "static/js/453.057967c0.chunk.js": "/DevTI/static/js/453.057967c0.chunk.js",
+    "static/media/logo.png": "/DevTI/static/media/logo.a7e7538da8b81aef02d3.png",
+    "static/media/start.png": "/DevTI/static/media/start.98f908ae2de4242ea157.png",
+    "static/media/infp.png": "/DevTI/static/media/infp.75829b0cc5f3e41e6c24.png",
+    "static/media/esfp.png": "/DevTI/static/media/esfp.0c7b5cad8db058fb5fe1.png",
+    "static/media/istj.png": "/DevTI/static/media/istj.8af41e3235268814305b.png",
+    "static/media/istp.png": "/DevTI/static/media/istp.62251cd5429f72d7e046.png",
+    "static/media/estj.png": "/DevTI/static/media/estj.30ee8e6a5d13579f0f17.png",
+    "static/media/enfj.png": "/DevTI/static/media/enfj.8fa18a4fb8d3befddbc8.png",
+    "static/media/enfp.png": "/DevTI/static/media/enfp.dd0576a94de458b4d90a.png",
+    "static/media/infj.png": "/DevTI/static/media/infj.8cb7c23310e4a8a161ef.png",
+    "static/media/esfj.png": "/DevTI/static/media/esfj.d4ebc0e437fd93bed44c.png",
+    "static/media/intp.png": "/DevTI/static/media/intp.44bd7410e473b7c40cb5.png",
+    "static/media/isfj.png": "/DevTI/static/media/isfj.8022cceada0b98def518.png",
+    "static/media/entp.png": "/DevTI/static/media/entp.3ea2289f87a0fc84d00b.png",
+    "static/media/intj.png": "/DevTI/static/media/intj.883a5935cb1a51f1f42e.png",
+    "static/media/estp.png": "/DevTI/static/media/estp.748d3e32f2930ffbe312.png",
+    "static/media/isfp.png": "/DevTI/static/media/isfp.3b39e934a1757b61c87f.png",
+    "static/media/entj.png": "/DevTI/static/media/entj.f23f201ff0c42109c565.png",
+    "static/media/green_b.png": "/DevTI/static/media/green_b.96995b37e07a8849b30d.png",
+    "static/media/yellow_b.png": "/DevTI/static/media/yellow_b.9aaeb12b70504d5aa76b.png",
+    "static/media/blue_b.png": "/DevTI/static/media/blue_b.c17e605806df64e527eb.png",
+    "static/media/pink_b.png": "/DevTI/static/media/pink_b.d5d682562395c5d37970.png",
+    "static/media/quizBtn.png": "/DevTI/static/media/quizBtn.c16d38d4bc0cc7164648.png",
+    "static/media/button.png": "/DevTI/static/media/button.b297c8efe94d277d61a7.png",
+    "static/media/pushedButton.png": "/DevTI/static/media/pushedButton.b907a0a99bf34cb42987.png",
+    "static/media/pushedQuizBtn.png": "/DevTI/static/media/pushedQuizBtn.668f93db08914542622d.png",
+    "index.html": "/DevTI/index.html",
+    "main.99cc5c7e.css.map": "/DevTI/static/css/main.99cc5c7e.css.map",
+    "main.e0a7cd11.js.map": "/DevTI/static/js/main.e0a7cd11.js.map",
+    "453.057967c0.chunk.js.map": "/DevTI/static/js/453.057967c0.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.99cc5c7e.css",
+    "static/js/main.e0a7cd11.js"
+  ]
+}
